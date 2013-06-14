@@ -37,6 +37,7 @@ $(function() {
     return $("#stopbutton").toggle();
   });
   return $("#stopbutton").on("click", function() {
+    audioRecorder.stop();
     $(this).toggle();
     $("#recbutton").toggle();
     $("#live").hide();
