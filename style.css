@@ -1,0 +1,135 @@
+html{
+    background-color:#ebebec;
+
+    background-image:-webkit-radial-gradient(center, #ebebec, #b4b4b4);
+    background-image:-moz-radial-gradient(center, #ebebec, #b4b4b4);
+    background-image:radial-gradient(center, #ebebec, #b4b4b4);
+
+    min-height:900px;
+}
+
+body {
+
+font-family: 'Dancing Script', cursive;
+color: #484B4C;
+font-size: 40px;
+font-weight: bold;
+}
+
+#title {
+
+position:fixed;
+bottom: 56%;
+left: 48%;
+margin-top: -75px;
+margin-left: -150px;
+
+}
+
+#recordBox {
+width: 300px;
+height: 150px; 
+background-color: #484B4C;
+-webkit-box-shadow:  0px 0px 0px 2px rgba(0, 0, 0, 0.4);
+box-shadow:  0px 0px 0px 2px rgba(0, 0, 0, 0.4);
+position:fixed;
+top: 50%;
+left: 50%;
+margin-top: -75px;
+margin-left: -150px;
+}
+
+#recbutton {
+
+position: absolute;
+bottom: 0px;
+right: 73px;
+font-family: Arial;
+color: #ffffff;
+font-size: 14px;
+padding: 1px;
+text-decoration: none;
+text-shadow: 1px 1px 3px #666666;
+background: #e80707;
+}
+  
+#recbutton:hover {
+  background: #f54949;
+}
+
+#downloadbutton {
+
+position: absolute;
+bottom: 0px;
+right: 0px;
+font-family: Arial;
+color: #ffffff;
+font-size: 14px;
+padding: 1px;
+text-decoration: none;
+text-shadow: 1px 1px 3px #666666;
+background: #EFA929;
+}
+  
+#downloadbutton:hover {
+  background: #F3C062;
+}
+
+#pacman {
+position: absolute;
+left: 0px;
+top: 25px;
+
+}
+
+#stopbutton {
+
+position: absolute;
+bottom: 0px;
+right: 73px;
+font-family: Arial;
+color: #ffffff;
+font-size: 14px;
+padding: 1px;
+text-decoration: none;
+text-shadow: 1px 1px 3px #666666;
+background: #e80707;
+display: none;
+}
+
+#microphone {
+position: absolute;
+left: 8px;
+top: 25px;
+}
+
+@-webkit-keyframes blink {
+  0%     { opacity: 0 } 50% { opacity: 0 }
+  50.01% { opacity: 1 } 100% { opacity: 1 }
+}
+
+blink {
+  -webkit-animation: blink 0.4s infinite linear alternate;
+  -webkit-font-smoothing: antialiased;
+}
+
+#recording {
+  color: #f3f3f3;
+  font-family: 'Economica', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px #666666;
+  position: absolute;
+  top: 45px;
+  left: 100px;
+}
+
+#entrance {
+  color: #f3f3f3;
+  font-family: 'Economica', sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px #666666;
+  top: 45px;
+  left: 100px;
+}

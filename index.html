@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<meta charset="UTF-8">
+	<title>HTML-Recorder</title>
+	<link href='http://fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<p id="title"> HTML Recorder - Levick</p> 
+	<div id="recordBox">
+	<div id="entrance">
+	<img id="microphone" src="mic.png" width="70" height="70" alt="" />
+	<span style="position: absolute; left: 100px; top: 45px;">Start Recording?</span>
+	</div>	
+	<div id="live" style="display: none; position: absolute; left: 20px;">
+	<img id="pacman" src="pacman.gif" width="90" height="90" alt="" />
+	<blink id="recording"> Recording... </blink>	
+	</div>
+	<button id="recbutton">Rec</button>
+	<button id="stopbutton">Stop</button>
+		<button id="downloadbutton" onclick="saveAudio();">Download</button>
+	</div>
+	
+<script src="recorder.js"></script>
+<script src="main.js"></script>
+
+<script type="text/javascript" >
+$(function() {
+  $("#recbutton").on("click", function() {
+    $("#entrance").hide();
+    $("#live").fadeIn("slow");
+    toggleRecording(this);
+    $(this).toggle();
+    return $("#stopbutton").toggle();
+  });
+  return $("#stopbutton").on("click", function() {
+    $(this).toggle();
+    $("#recbutton").toggle();
+    $("#live").hide();
+    return $("#entrance").fadeIn("slow");
+  });
+});
+</script>
+	
+</body>
+</html>
